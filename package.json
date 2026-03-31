@@ -1,0 +1,19 @@
+{
+  "name": "sgp-oracle-e2e-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright E2E tests for SGP Oracle (https://victorpolishchouk.github.io/sgp-oracle/)",
+  "scripts": {
+    "test": "playwright test",
+    "test:sgp-auth": "playwright test tests/sgp-oracle-auth.spec.ts --project=chromium",
+    "test:sgp-happy": "playwright test tests/sgp-oracle-happy-path.spec.ts --project=chromium",
+    "test:report": "playwright show-report playwright-report"
+  },
+  "keywords": ["playwright", "e2e", "sgp", "oracle"],
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
